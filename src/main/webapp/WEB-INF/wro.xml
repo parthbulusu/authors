@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="http://www.isdc.ro/wro">
+  <group name="global">
+  	<js>/assets/boilerplate/js/main.js</js>
+    <js>/assets/boilerplate/js/plugins.js</js>
+    <js>/assets/default/js/lib/angular.min.js</js>
+    <js>/assets/default/js/lib/angular-sanitize.min.js</js>
+    <js>/assets/default/js/lib/ui-bootstrap-tpls-0.9.0.min.js</js>
+	<js>/assets/default/ts/js/services/services.js</js>     
+    <js>/assets/default/ts/js/services/LogService.js</js>
+    <js>/assets/default/ts/js/services/PalUtilsService.js</js>
+    <js>/assets/default/ts/js/services/AuthorService.js</js>
+	<js>/assets/default/ts/js/directives/directives.js</js>     
+    <js>/assets/default/ts/js/directives/utils.js</js>
+    <js>/assets/default/ts/js/controllers/BaseController.js</js>
+    <js>/assets/default/ts/js/controllers/PalController.js</js>
+    <js>/assets/default/ts/js/controllers/AuthorController.js</js>
+    <js>/assets/default/ts/js/controllers/AuthorModalController.js</js>
+    <js>/assets/default/ts/js/controllers/FileUploadController.js</js>
+    <js>/assets/default/ts/js/controllers/controller.js</js>
+    <js>/assets/default/ts/js/main.js</js>    
+    <css>/assets/boilerplate/css/normalize.css</css>
+    <css>/assets/boilerplate/css/main.css</css>
+    <css>/assets/default/css/vendor/bootstrap.min.css</css>
+    <css>/assets/default/css/vendor/bootstrap-theme.min.css</css>    
+    <css>/assets/default/css/common.css</css>
+  </group>
+  <group name="author-home" >
+  	<css>/assets/boilerplate/css/author.css</css>
+    <js>/assets/default/ts/js/controllers/AuthorController.js</js>	
+	<group-ref>global</group-ref>
+  </group>  
+</groups>

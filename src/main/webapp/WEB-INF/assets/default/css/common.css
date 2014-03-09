@@ -1,0 +1,77 @@
+/*Variables*/
+@maincolor: #069;
+@bordercolor: #4575D4;
+
+/*Mixins*/
+.rounded_corners (@radius: 5px) {
+    border: 1px solid @bordercolor;	
+  	-moz-border-radius: @radius;
+  	-webkit-border-radius: @radius;
+ 	border-radius: @radius;
+}
+
+input[type="file"],input[type="reset"],input[type="submit"],input[type="button"]{
+    .rounded_corners(4px);
+    box-shadow: 0 2px 5px -2px #111111, 0 2px 5px 0 rgba(255, 255, 255, 0.3) inset;
+    background: none repeat scroll 0 0 @maincolor;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.6em 1em;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+}
+P#UtilityNav {
+	color: #00679C;
+	font-size: 11px;
+}
+.action{
+	cursor: pointer;
+	float: left;
+	margin-right: 13px;
+}
+.pagination {
+	display: inline;
+}
+.pagination-extra{
+	float:left;
+	width:100%;
+	margin-top:3px;
+	margin-bottom:5px;	
+}
+.pagination-right{
+	float:right;
+    .rounded_corners(2px);	
+    padding: 4px;
+}
+.main-body{
+	margin-top:5px;
+}
+.uploaded {
+    padding: 0;
+    height: 14px;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#4b9500));
+    border-image: initial;
+}
+.dropbox {
+	width: 9.5em;
+	height: 8em;
+	.rounded_corners(2px);	
+    background-color: #FEFFEC;
+    text-align: center;
+    color: #BBB;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+}
+.dropbox span {
+    margin-top: 0.9em;
+    display: block;
+}
+.dropbox.not-available {
+    background-color: #F88;
+}
+.dropbox.over {
+    background-color: #bfb;
+}
